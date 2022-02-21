@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js "></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>控制動畫方法</title>
+</head>
+
+<body>
+    <button id="play">play</button>
+    <button id="pause">stop</button>
+        <div class="box a1"></div>
+    </div>
+    <script>
+         
+        // 控制動畫方法
+        let tl = gsap.timeline({
+               paused: true
+        }); // 動畫先停止
+
+        var animation = tl.to('.a1' , {
+             x: 200,
+             repeat : -1,
+             yoyo: true,
+             druation : 6
+
+        });
+        var btn_Play = document.getElementById('play'); 
+        var btn_Pause = document.getElementById('pause'); 
+
+        btn_Play.addEventListener('click' ,function(){
+            animation.play();
+        });
+        btn_Pause.addEventListener('click' ,function(){
+            animation.pause();
+        });
+        //anim.play() // plays forward
+            //.pause()
+            // .resume() // respects direction
+            // .reverse()
+            // .restart()
+            // .timeScale(2) // 2 = double speed, 0.5 = half speed
+            // .seek(1.5) // jump to a time (in seconds) or label
+            // .progress(0.5) // jump to halfway
+            // .totalProgress(0.8) // includes repeats
+    </script>
+</body>
+
+</html>

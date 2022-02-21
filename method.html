@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js "></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>如何設定</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box set"></div>
+        <div class="box to"></div>
+        <div class="box from"></div>
+        <div class="box fromto"></div>
+    </div>
+    <script>
+        // 不同的Method
+        gsap.set('.set' , {
+            x : 100
+        });
+        gsap.to('.to', {
+            x: 200
+        });
+        gsap.from('.from', {
+            x: 200
+        });
+        gsap.fromTo('.fromto', {
+            x: 200
+        }, {
+            y: 300  
+
+        })
+    </script>
+</body>
+
+</html>

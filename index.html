@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js "></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>如何設定</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a1"></div>
+    </div>
+    <script>
+        // 基本設定
+        gsap.to('.a1', {
+            x: 300,
+            y: 300,
+            duration: 1,
+            //backgroundColor: "red", // camelCase
+            //duration: 1, // seconds
+            //delay: 0.5,
+            // ease: "power2.inOut",
+            // stagger: 0.1, // stagger start times
+            // paused: true, // default is false
+            // overwrite: "auto", // default is false
+             repeat: 2, // number of repeats (-1 for infinite)
+             //repeatDelay: 1, // seconds between repeats
+             //repeatRefresh: true, // invalidates on each repeat
+             yoyo: true, // if true > A-B-B-A, if false > A-B-A-B
+             //yoyoEase: true, // or ease like "power2"
+            // onComplete: myFunc,
+        })
+    </script>
+</body>
+
+</html>
