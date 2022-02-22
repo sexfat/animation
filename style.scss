@@ -25,8 +25,13 @@ body {
 .wrapper {
      @include layout(full);
      section {
-         @include rect(100vw, 100vh);
+         @include rect(100vw, 100vh);  
      }
+}
+
+section:nth-child(even) {
+
+   background-color: rgb(148, 148, 148);
 
 }
 
@@ -38,4 +43,5 @@ body {
   top: 5px;
   left: 5px;
   margin-top:5px;
+  color: #333;
 }

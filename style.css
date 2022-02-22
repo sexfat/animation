@@ -16,6 +16,10 @@ body {
   height: 100vh;
 }
 
+section:nth-child(even) {
+  background-color: #949494;
+}
+
 .box {
   width: 80px;
   height: 80px;
@@ -25,5 +29,6 @@ body {
   top: 5px;
   left: 5px;
   margin-top: 5px;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
