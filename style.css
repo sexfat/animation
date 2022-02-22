@@ -31,4 +31,8 @@ section:nth-child(even) {
   margin-top: 5px;
   color: #333;
 }
+
+.active {
+  background-color: #00fff2;
+}
 /*# sourceMappingURL=style.css.map */
