@@ -15,6 +15,23 @@ cdnjs 安裝 : https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js "></script>
 ```
 
+## 套件ScrollTrigger
+
+
+```html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+```
+
+### 範例
+
+https://codepen.io/Meanderling/full/ZEWdBeb
+
 ## 使用樣式表
 
 https://greensock.com/cheatsheet/
+
+
+
+
+
+
